@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="BRAKE">0</integer>
+    <integer name="COAST">1</integer>
+    <integer name="FORWARD">2</integer>
+    <integer name="BACKWARD">3</integer>
+    <integer name="RIGHT">4</integer>
+    <integer name="LEFT">5</integer>
+    <integer name="FORWARD_1STEP">6</integer>
+    <integer name="BACKWARD_1STEP">7</integer>
+    <integer name="RIGHT_STAY">8</integer>
+    <integer name="LEFT_STAY">9</integer>
+
+    <integer name="MODE_HANDDRIVEN">0</integer>
+    <integer name="MODE_AUTOPILOT">1</integer>
+
+    <integer name="AUTOMODE_RIGHTHANDRULE">0</integer>
+    <integer name="AUTOMODE_FORWARDRULE">1</integer>
+
+    <integer name="REQUEST_OBSTACLE_DISTANCE">0</integer>
+
+    <integer name="ACTION_MOVE">0</integer>
+    <integer name="ACTION_LOOK">1</integer>
+    <integer name="ACTION_PERFORM">2</integer>
+    <integer name="ACTION_CHANGEMODE">3</integer>
+    <integer name="ACTION_DATAREQUEST">4</integer>
+
+    <integer name="PERFORMANCE1">0</integer>
+    <integer name="PERFORMANCE2">1</integer>
+
+    <integer name="TRIG_ERROR">-1</integer>
+    <integer name="ECHO_ERROR">-2</integer>
+</resources>

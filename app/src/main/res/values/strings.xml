@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Labex Controller</string>
+    <string name="labexMAC">20:15:12:01:09:19</string>
+    <!--string name="labexMAC">98:D3:32:30:4B:D3</string-->
+    <string name="connectLabex">CONNECT LABEX</string>
+    <string name="disconnectLabex">DISCONNECT LABEX</string>
+    <string name="connectingLabex">CONNECTING LABEX...</string>
+</resources>

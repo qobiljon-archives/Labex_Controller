@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:state_enabled="false">
+        <inset android:drawable="@drawable/action_circle_disabled"></inset>
+    </item>
+
+    <item android:state_pressed="true" android:state_enabled="false">
+        <inset android:drawable="@drawable/action_circle_disabled"></inset>
+    </item>
+
+    <item android:state_pressed="true" android:state_enabled="true">
+        <inset android:drawable="@drawable/action_circle_pressed"></inset>
+    </item>
+
+    <item android:state_pressed="false" android:state_enabled="true">
+        <inset android:drawable="@drawable/action_circle_released"></inset>
+    </item>
+</selector>

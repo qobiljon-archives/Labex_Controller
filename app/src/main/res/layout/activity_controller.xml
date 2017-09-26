@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ControllerActivity">
+
+    <!--Layout for all buttons -->
+    <RelativeLayout
+        android:id="@+id/layout_manual_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        tools:ignore="DisableBaselineAlig1nment">
+
+        <!--Layout for distance TextView -->
+        <LinearLayout
+            android:id="@+id/layout_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="monospace"
+                android:text="CLEAR DISTANCE:"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text_obstacle_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="monospace"
+                android:text="0 CM"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!--The seekbar for controlling the head rotation -->
+        <LinearLayout
+            android:id="@+id/layout_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_distance"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/pad_background"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="HEAD ROTATION" />
+
+            <SeekBar
+                android:id="@+id/seekbar_head"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:max="36"
+                android:padding="5dp"
+                android:progress="18" />
+
+        </LinearLayout>
+
+        <!--layout for buttons: Up, Down, Right, Left -->
+        <GridLayout
+            android:id="@+id/arrowGrid"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/pad_background"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonUp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/arrow_up" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonLeft"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/arrow_left"
+                android:enabled="false" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonRight"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/arrow_right"
+                android:enabled="false"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonDown"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/arrow_down" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </GridLayout>
+
+        <!--Layout for buttons: Iks, Circle, Square, Triangle -->
+        <GridLayout
+            android:id="@+id/controlGrid"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/pad_background"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonTriangle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/action_triangle" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonSquare"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/action_square" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonCircle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/action_circle" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/buttonIks"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/action_iks" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </GridLayout>
+    </RelativeLayout>
+
+    <!--Layout for autopilot buttons -->
+    <RelativeLayout
+        android:id="@+id/layout_autopilot_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGreen"
+        android:visibility="invisible">
+
+    </RelativeLayout>
+
+    <!--Layout for AUTOPILOT button-->
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:text="AUTOPILOT"
+            android:textColor="@color/buttonBackgroundReleased" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/toggle_button_background"
+            android:onClick="toggleAutopilot"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

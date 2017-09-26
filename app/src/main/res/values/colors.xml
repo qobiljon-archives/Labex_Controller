@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="modeColor">#617aa0</color>
+
+    <color name="textColor">#f888</color>
+
+    <color name="padBackground">#FDDD</color>
+    <color name="buttonBackgroundPressed">#FF4081</color>
+    <color name="buttonBackgroundReleased">#009688</color>
+    <color name="buttonBackgroundDisabled">#FCCC</color>
+
+    <color name="buttonSquareColor">#FF5722</color>
+
+    <color name="lightGreen">#C6FF00</color>
+    <color name="lightYellow">#FFFF00</color>
+    <color name="lightOrange">#FFAB40</color>
+    <color name="darkOrange">#FF5722</color>
+    <color name="lightBrown">#EFEBE9</color>
+</resources>
